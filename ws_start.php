@@ -17,8 +17,7 @@ $connection->send("联接成功。输入密码。。\n");
 if($data == "4748"){
  // $connection->send("验证成功，开启log查询。。\n");
 //  $connection->send($t);
-$file_name      = "/home/bitmex/conf/".date("Y-m-d",time()) .".log";
-//$file_name      = "/home/bitmex/log/mianProcess.log";
+$file_name      = "/log/".date("Y-m-d",time()) .".log";
 
 $file_size      = filesize($file_name);
 $file_size_new  = 0;
