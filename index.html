@@ -37,7 +37,7 @@
 
 <script src='//cdn.bootcss.com/socket.io/1.3.7/socket.io.js'></script>
 <script>
-ws = new WebSocket("ws://aab.isong.xin:2000");
+ws = new WebSocket("ws://xxx.xxx.xxxx:2000"); //ip地址或者访问域名
 ws.onopen = function() {
     ws.send('tom');
 };
@@ -48,7 +48,7 @@ oTest.innerHTML = oTest.innerHTML + e.data;
    // alert("get :" + e.data);
 };
 
-window.setInterval(a,1000);
+window.setInterval(a,1000);//每秒钟心跳
 
 function a(){
 r = document.getElementById("v");
